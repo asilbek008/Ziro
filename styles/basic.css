@@ -1,0 +1,110 @@
+@font-face {
+  font-family: odibee;
+  src: url("../assets/fonts/odibee_sans/OdibeeSans-Regular.ttf");
+}
+@font-face {
+  font-family: openSans;
+  src: url("../assets/fonts/open_sans/OpenSans_Condensed-Regular.ttf");
+}
+@font-face {
+  font-family: oswald;
+  src: url("../assets/fonts/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: prompt;
+  src: url("../assets/fonts/prompt/Prompt-Regular.ttf");
+}
+:root {
+  --primary-color: #544cac;
+  --secondary-color: #ef6010;
+  --text-color: #a8a8a8;
+  --black: #353434;
+  --primary-light-color: rgba(56, 49, 139, 0.33);
+  --white: #ffffff;
+  --dark-grey: #717171;
+}
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: openSans, serif;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+input:focus,
+input:active,
+button,
+button:focus,
+button:active {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.universal-btn {
+  color: var(--white);
+  text-align: center;
+  font-family: openSans;
+  font-size: 1.6rem;
+  letter-spacing: 0.032rem;
+  padding: 1.4rem 3.3rem;
+  border-radius: 4.7rem;
+  background: var(--primary-color);
+  box-shadow: 0rem 0.4rem 1.2rem 0rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s linear;
+}
+.universal-btn:hover {
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+}
+.universal-title {
+  max-width: 54.3rem;
+  margin: 12rem auto 4.5rem auto;
+}
+.universal-title h2 {
+  color: var(--black);
+  text-align: center;
+  font-family: oswald;
+  font-size: 4rem;
+  line-height: 5rem; /* 125% */
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.universal-title p {
+  color: var(--text-color);
+  text-align: center;
+  font-family: openSans;
+  font-size: 1.4rem;
+  line-height: 2.4rem; /* 171.429% */
+  letter-spacing: 0.028rem;
+  cursor: pointer;
+}
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.prev {
+  background-color: white;
+}
+.next {
+  background-color: white;
+}
